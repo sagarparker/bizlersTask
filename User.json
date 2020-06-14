@@ -1,0 +1,10 @@
+[
+    { "NAME":"Ada Lovelace",
+      "ROLE":"Admin"},
+    { "NAME":"Gracce Hopper",
+      "ROLE":"Developer"},
+    { "NAME":"Margaret Hamilton",
+      "ROLE":"QA"},
+    { "NAME":"Joan Clarke",
+      "ROLE":"Manager"}
+]

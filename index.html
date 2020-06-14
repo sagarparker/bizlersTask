@@ -14,8 +14,161 @@
 
     <!-- MATERIAL ICON -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="./CSS/index.css">
+
 </head>
 <body>
+    <div class="mainDiv">
+        <div class="sideNav fiv">
+            <div class="menu-icon-div">
+                <center>
+                    <span class="material-icons" id="menu-icon">
+                        menu
+                    </span>
+                </center>
+
+            </div>
+
+            <div class="side-icons">
+                <center>
+                    <span class="material-icons sicon" >
+                        search
+                    </span>
+                </center>
+            </div>
+            
+            <div class="side-icons">
+                <center>
+                    <span class="material-icons sicon" >
+                        home
+                    </span>
+                </center>
+            </div>
+
+            
+            <div class="side-icons">
+                <center>
+                    <span class="material-icons sicon" >
+                        analytics
+                    </span>
+                </center>
+            </div>
+
+            
+            <div class="side-icons">
+                <center>
+                    <span class="material-icons sicon" >
+                        transfer_within_a_station
+                    </span>
+                </center>
+            </div>
+
+            <div class="side-icons">
+                <center>
+                    <span class="material-icons sicon" >
+                        settings
+                    </span>
+                </center>
+            </div>
+        </div>
+
+        <div class="content fiv">
+            <nav class="navbar navbar-expand-lg navbar-light ">
+                <a class="navbar-brand" href="#">
+                    <img src="./Images/company_logo.png"  id="navImage">
+                </a>
+                <div class="collapse navbar-collapse">
+                  <div class="navbar-nav ml-auto">
+                    <a class="nav-item nav-link disabled" style="text-align: right;" href="#">
+                        <span style="display: block;color:rgb(141, 141, 141)">RENEE MCKELVEY</span>
+                        <span style="font-size: 0.9em;">Account setting</span>
+        
+                    </a>
+                    <a class="nav-item nav-link" style="text-align: right;" href="#">
+                        <span class="material-icons" id="userIcon">
+                            account_circle
+                        </span>
+                    </a>
+        
+                  </div>
+                </div>
+              </nav>
+            
+            <div class="userList">
+
+                <p id="userHead">User list</p>
+
+                <input type="search" name="" id="searchBox" placeholder="Search">
+                <script src="./JS/index.js"></script>
+        
+                <table id="tbl">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Role</th>
+                            <th style="text-align: center;">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+            
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="formDiv">
+                <form action="" onsubmit="validateInput()">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12 col-md-8">
+                                <p class="divHead">New User Details</p>
+                                <div class="row">
+                                    <div class="col-12 col-md-6">
+                                        <input type="text" name="username" class="usrInp" id="uname" placeholder="Username" required>
+                                        <input type="text" name="firstname" class="usrInp" id="fname" placeholder="Firstrname" required>
+                                        <select name="role" id="role" required>
+                                            <option value="Admin">Admin</option>
+                                            <option value="developer">Developer</option>
+                                            <option value="Manager">Manager</option>
+                                            <option value="QA">QA</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <input type="email" name="Email" class="usrInp" id="emailid" placeholder="Email" required>
+                                        <input type="text" name="Lastname" class="usrInp" id="lname" placeholder="Lastname" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 " id="secDiv">
+                                <p class="divHead">Profile picture</p>
+                                <div id="imageHolder">
+                                    <center>
+                                        <span class="material-icons" id="photoImage">
+                                            image
+                                        </span>
+                                    </center>
+                                </div>
+
+                                <input type="file" id="imgBtn" accept=".png, .jpg" required/>                            
+                            </div>
+                            <button type="submit" id="subBtn">Add User</button>
+                            <button type="reset" id="canBtn">Cancel</button>
+                        </div>
+                    </div>
+                </form>
+
+                <script src="./JS/validation.js"></script>
+
+            </div>
+        
+
+        </div>
+    </div>
+
     
 </body>
 </html>
